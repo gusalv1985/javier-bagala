@@ -101,6 +101,8 @@
     .video-contaner{
         height: 100%;
         width: 100%;
+        padding-left: 16%;
+        background-color: #000;
         overflow: hidden;
         position: absolute;
         
