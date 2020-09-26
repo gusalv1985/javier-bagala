@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="modernizr-3.11.2.min.js"></script>
+    <title>practica de frontend 2016</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- esto tiene quee star antes del estilos.css para que se deje modificar por los estilos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flexboxgrid@6.3.1/dist/flexboxgrid.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <p class="browserupgrade">
+      estas usando un navegador <strong> desactualizado </strong>por favor <a href="http://browsehappy.com/"> actualiza
+      tu navegador</a> para una mejor experiencia</p>
+    <![endif]-->
+  <div class="video-contaner">
+    <!-- otro tipo de archivo de video para que sea vea en otros navegadores es ".webm" seria ideal que esten los 2.//
+      a lado de height se puede poner la propiedad poster="/con la direccion de la foto" para que la cargue antes
+      que el video si la conexion es lenta.// autoplay para que el video se reproduzaca  -->
+    <video  autoplay="true" loop="true" width="1280" height="720" poster="/IMG_9389.JPG" >
+      <source src="Fuego y Pasion.mp4"> 
+    </video>
+  </div>  
+  <div class="row full-height middle-xs center-xs relative up" id="home" >
+    <div class="col-xs-12">
+      <div class="box white-text">
+        <img src="/logodharma.png" alt="">
+        <h1 class="google-fonts title no-margin">Javier Bagala Dharma</h1>
+        <p id="is-open">
+          <button id="btn-off" style="background: border-box; border: none;"><i class="glyphicon glyphicon-volume-off"></i></button>
+          <button id="btn-on" style="background: border-box; border: none;"><i class="glyphicon glyphicon-volume-up"></i></button>       
+          <span class="text">Fuego y Pasión</span> 
+        </p>       
+      </div>
+      <nav class="fixed top right white-text navegacion" id="navigation">
+        <ul class="list-inline">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#menu">Discos</a></li>
+          <li><a href="#galery">Galeria</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="absolute black large-padding bottom white-text full-width" id="descripcion">
+      <div class="row middle-xs center-xs">
+        <div class="col-xs-7 col-sm-6 white-text medium">
+          <p class="no-margin cambioP">Causa y efecto</p> 
+        </div>
+        <div class="col-xs" id="sticky-Navigation">
+          <div class="box">
+            <nav class="text-right navegacion" id="responsive-nav">
+              <i class="glyphicon glyphicon-align-justify white-text medium glyphicon-remove" id="menu-opener"></i>
+              <ul class="list-inline no-margin" >
+                <li><a class="menu-link" href="#home">Inicio</a></li>
+                <li><a class="menu-link" href="#menu">Discos</a></li>
+                <li><a class="menu-link" href="#galery">Galeria</a></li>
+                <li><a class="menu-link" href="#contacto">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div> 
+      </div> 
+    </div> <!--fin columna 2do menu -->
+  </div> <!--fin row pantalla principal sobre video -->
+  <div class="text-center relative" id="menu">
+    <div class="absolute white" id="menu-title">
+      <h2 class="google-fonts subtitle" style="margin-top: 10px;">Discos</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 tapas" style="background-image: url(/img1.jpg);">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12">
+              <h3 class="white-text google-fonts subtitle" >Causa y Efecto</h3>
+              <!-- <button style="background: border-box; border: none;">
+                <h3 class="white-text google-fonts subtitle" style="margin-top: 10px;" >Causa y Efecto</h3>
+              </button>   // si quisiera que fuera un boton para ir a otro lado aca tene guachin -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 tapas" style="background-image: url(/img2.jpg);">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12">
+              <h3 class="white-text  google-fonts subtitle">Dharma</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 tapas" style="background-image: url(/img3.jpg);">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12">
+              <h3 class="white-text  google-fonts subtitle">Aquellos Bastardos</h3>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 tapas" style="background-image: url(/img4.jpg);">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12">
+              <h3 class="white-text  google-fonts subtitle">Raza de Traidores</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 tapas" style="background-image: url(/img5.jpg);">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12">
+              <h3 class="white-text  google-fonts subtitle">Ideología</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 tapas" style="background-image: url(/img6.jpg);">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12">
+              <h3 class="white-text  google-fonts subtitle">Manifiesto</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 tapas" style="background-image: url(/img7.jpg);">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12">
+              <h3 class="white-text  google-fonts subtitle">Demo Nepal ll</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 tapas" style="background-image: url(/img8.jpg);">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12">
+              <h3 class="white-text  google-fonts subtitle">Tributo a V8</h3>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+  <div id="galery">
+    <div class="inner">
+      <div class="image" style="background-image: url(/Javier-Bagala-guitarrista-de-Nepal-y-Joe-Satriani.jpg);">
+      </div>
+      <div class="image" style="background-image: url(/Javier-Bagala-guitarrista-de-Nepal-y-Kiko-Loureiro-guitarrista-de-Megadeth.jpg);">
+      </div>
+      <div class="image" style="background-image: url(/Javier-Bagala-ex-guitarrista-de-Nepal-y-Bruce-Kulick-guitarrista-de-Kiss.jpg);">
+      </div>
+      <div class="image" style="background-image: url(/Javier-Bagala-ex-guitarrista-de-Nepal-Hansi-Kursch-de-Blind-Guardian-Tomas-Stauch-de-Blind-Guardian.jpg);">
+      </div>
+      <div class="image" style="background-image: url(/Javier-Bagala-ex-guitarrista-de-Nepal-Chizzo-Di-Napoli-guitarrista-de-La-Renga-y-Larry-Zavala-cantante-de-Nepal-1.jpg);">
+      </div>
+      <div class="image" style="background-image: url(/Javier-Bagala-y-Danilo-Moschen-e1533999297871.jpg);">
+      </div>
+    </div>
+  </div>
+  <div class="container relative">
+    <div class="card white black-text text-center">
+      <h3 class="medium"><strong class="google-fonts"> Javier Bagala </strong> con grandes artistas nacionales e internacionales </h3>
+    </div>
+  </div>
+  <div class="black white-text full-height" id="contacto">
+    <div class="black row middle-xs full-height">
+      <div class="col-xs-12">
+        <div class="box">
+          <p class="text-center medium" id="info-contacto">Presiona enter al llenar el campo correspondiente y enviame un mensaje</p>
+          <form action="https://formspree.io/gmaiden35@gmail.com", method="POST" id="contact-form" class="step-form">
+            <div class="row center-xs">
+              <div class="col-xs-1 col-md-1 text-center">
+                <div class="box ">
+                  <div class="path-step active"></div>
+                  
+                  <div class="path-step"></div>
+                  
+                  <div class="path-step"></div>
+                  
+                </div>
+              </div>
+              <div class="col-xs-11 col-md-5">
+                <div class="box">
+                  <fieldset class="step active">
+                    <input type="email", name="email" placeholder="Ingresa tu email" class="input" required="true">
+                  </fieldset> 
+                  <fieldset class="step">
+                    <input type="text", name="nombre" placeholder="Ingresa tu Nombre"class="input" required="true">
+                  </fieldset>
+                  <fieldset class="step">
+                    <input name="body" id="" cols="30" rows="2" placeholder="escribe tu mensaje..." required="true" class="input">
+                    <button type="submit" class="btn">Enviar</button>
+                  </fieldset>
+                   
+                </div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="location">
+    <div id="map"></div>
+    <div id="message" class="black large-padding white-text text-center medium">prueba</div>
+  </div> -->
+
+  <script 
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" 
+  crossorigin="anonymous">
+  </script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHzW8YC5sMbR_wKbcbVd3gQcTzim9MBoA"></script>
+  <script src="maps.js"></script> 
+  <script>window.jquery || document.write("<script src='/jquery-3.3.1.min.js'><\/script>")</script>
+  <script src="main.js"></script>
+  <script src="steps.js"></script>
+
+</body>
+</html>
+ 
