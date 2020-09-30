@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lite": "lite-server",
-    "postinstall": "npm run lite"
+    "postinstall": "ng build --prod"
   },
   "author": "gustavo",
   "license": "ISC",
